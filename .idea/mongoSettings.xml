@@ -25,6 +25,77 @@
           </option>
           <option name="userDatabase" value="mongo" />
         </ServerConfiguration>
+        <ServerConfiguration>
+          <option name="authenticationDatabase" value="admin" />
+          <option name="authenticationMechanism" value="SCRAM-SHA-1" />
+          <option name="password" value="CXDLxeLZbzGikK3k" />
+          <option name="serverUrls">
+            <list>
+              <option value="localhost:27017" />
+            </list>
+          </option>
+          <option name="sshTunnelingConfiguration">
+            <SshTunnelingConfiguration />
+          </option>
+          <option name="userDatabase" value="andrea" />
+          <option name="username" value="mongo" />
+        </ServerConfiguration>
+        <ServerConfiguration>
+          <option name="authenticationDatabase" value="admin" />
+          <option name="authenticationMechanism" value="SCRAM-SHA-1" />
+          <option name="label" value="sda" />
+          <option name="password" value="CXDLxeLZbzGikK3k" />
+          <option name="serverUrls">
+            <list>
+              <option value="localhost:27017" />
+            </list>
+          </option>
+          <option name="sshTunnelingConfiguration">
+            <SshTunnelingConfiguration />
+          </option>
+          <option name="username" value="mongo" />
+        </ServerConfiguration>
+        <ServerConfiguration>
+          <option name="serverUrls">
+            <list>
+              <option value="localhost:27017" />
+            </list>
+          </option>
+          <option name="sshTunnelingConfiguration">
+            <SshTunnelingConfiguration />
+          </option>
+        </ServerConfiguration>
+        <ServerConfiguration>
+          <option name="label" value="dasda" />
+          <option name="serverUrls">
+            <list>
+              <option value="localhost:27017" />
+            </list>
+          </option>
+          <option name="sshTunnelingConfiguration">
+            <SshTunnelingConfiguration />
+          </option>
+        </ServerConfiguration>
+        <ServerConfiguration>
+          <option name="serverUrls">
+            <list>
+              <option value="localhost:27017" />
+            </list>
+          </option>
+          <option name="sshTunnelingConfiguration">
+            <SshTunnelingConfiguration />
+          </option>
+        </ServerConfiguration>
+        <ServerConfiguration>
+          <option name="serverUrls">
+            <list>
+              <option value="localhost:27017" />
+            </list>
+          </option>
+          <option name="sshTunnelingConfiguration">
+            <SshTunnelingConfiguration />
+          </option>
+        </ServerConfiguration>
       </list>
     </option>
   </component>

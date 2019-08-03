@@ -1,13 +1,16 @@
 package main
 
 import (
-	"fmt"
 	L "./lib"
+	"fmt"
 )
 
 func main() {
-	fmt.Println("Hello, world.")
-	L.Demo()
-	L.Crypto("ciao")
-	L.Init()
+
+	fmt.Println("Start shorturl in pure golang")
+	if L.Start_Server() < 0 {
+		defer L.EndDB(L.Client)
+	}
+
+	fmt.Println("End shorturl in pure golang")
 }
