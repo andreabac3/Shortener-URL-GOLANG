@@ -27,7 +27,10 @@ Use it in your favourite browser
 #### Record URL
 Use this link: http://127.0.0.1:8080/insert/www.yourWebSiteURL.com <br>
 <br>
-Using this function you will register a new URL in the database 
+Using this function you will register a new URL in the database. <br>
+The synopsis of this function requires a parameter in the URL of the HTTP request, this parameter 
+is your URL to be shortened, this URL must not contain the prefix http:// or https:// or 
+quotation marks.
 #### Redirect from shortner URL
 Use this link: http://127.0.0.1:8080/get/bd443137fc0662f1e10f7f71ac948766 <br>
 
@@ -49,7 +52,10 @@ Compile it with GO
 This is a toy project.
 * .env file needs a real path. (Path src/lib/mongodbConnection.go Function: Init() )
 * Currently, communications with the DB are not secure.
-
+* The recorded URL must not contain the prefix http:// or https:// or 
+quotation marks.
+## Contributing
+Feel free to open issue or pull request.
 # Authors
 
 * **Andrea Bacciu**  - [github](https://github.com/andreabac3)
