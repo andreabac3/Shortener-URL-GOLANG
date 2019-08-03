@@ -1,7 +1,7 @@
 # Shortener URL in pure Golang and MongoDB
 
 This code allows you to create a web server with the URL shortener function. <br>
-It's developed purely in Go, uses official MongoDB drivers and Gorilla Mux for the routing.
+It's developed purely in Go, uses the official MongoDB drivers and Gorilla Mux for the routing.
 
 ## Getting Started
 
