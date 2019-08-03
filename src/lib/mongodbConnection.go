@@ -16,10 +16,6 @@ type ShortUrl struct {
 	Hash string
 }
 
-func Demo() {
-	fmt.Println("HI")
-}
-
 func Init() *mongo.Client {
 	// TODO fix url .env
 	err := godotenv.Load("/Users/andrea/go/src/urlShortner/src/.env")
@@ -65,7 +61,7 @@ func EndDB(client *mongo.Client) {
 
 func InsertURL(collection *mongo.Collection, url string) string {
 	result := MakeShortUrl(url)
-	insertResult, err := collection.InsertOne(context.TODO(),result )
+	insertResult, err := collection.InsertOne(context.TODO(), result)
 	if err != nil {
 		log.Fatal(err)
 		return ""
@@ -93,6 +89,6 @@ func W_GetCollection() (*mongo.Client, *mongo.Collection) {
 	client := Init()
 	mongodb_dbname_shorturl := os.Getenv("MONGODB_DBNAME_SHORTURL")
 	mongodb_collection_shorturldata := os.Getenv("MONGODB_COLLECTION_SHORTURLDATA")
-	collection:=GetCollection(client, mongodb_dbname_shorturl, mongodb_collection_shorturldata)
-	return client , collection
+	collection := GetCollection(client, mongodb_dbname_shorturl, mongodb_collection_shorturldata)
+	return client, collection
 }
