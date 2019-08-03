@@ -14,7 +14,7 @@ Setting up your .env file (path: src/.env)
 #### MongoDB
 Database Name = "shorturl" <br>
 Collection Name = "shorturldata"
-```json
+```
 { Hash: 'hashed string', Url: 'string'}
 ```
 
