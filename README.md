@@ -20,17 +20,26 @@ An example
 { Url: 'www.andreabacciu.com', Hash: 'bd443137fc0662f1e10f7f71ac948766' }
 ```
 
-### Test
+## Test
 
 Use it in your favourite browser
 
 #### Record URL
-Use this link: http://127.0.0.1:8080/insert/www.yourWebSiteURL.com
+Use this link: http://127.0.0.1:8080/insert/www.yourWebSiteURL.com <br>
+<br>
+Using this function you will register a new URL in the database 
 #### Redirect from shortner URL
-Use this link: http://127.0.0.1:8080/get/bd443137fc0662f1e10f7f71ac948766
-#### Convert from hashed URL to un-hashed URL 
-Use this link: http://127.0.0.1:8080/get_no_redirect/bd443137fc0662f1e10f7f71ac948766
+Use this link: http://127.0.0.1:8080/get/bd443137fc0662f1e10f7f71ac948766 <br>
 
+Using this function you will be redirected to the requested page.<br>
+<br>
+The synopsis of this function requires a parameter in the URL of the HTTP request, this parameter is an already known hash of a link
+
+#### Convert from hashed URL to un-hashed URL 
+Use this link: http://127.0.0.1:8080/get_no_redirect/bd443137fc0662f1e10f7f71ac948766 <br>
+<br>
+Using this function you can go back to the name of the original link before the hash. <br>
+The synopsis of this function requires a parameter in the URL of the HTTP request, this parameter is an already known hash of a link
 
 ## Program execution
 
