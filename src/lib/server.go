@@ -7,8 +7,10 @@ import (
 	"os"
 )
 
-var router = mux.NewRouter()
-var Client, collection = W_GetCollection()
+var (
+	router =  mux.NewRouter()
+        Client, collection = W_GetCollection()
+)
 
 func Start_Server() int8 {
 
